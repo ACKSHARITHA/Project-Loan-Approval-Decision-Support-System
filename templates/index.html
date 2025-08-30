@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Loan Approval DSS</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Loan Predictor</h1>
+        <form method="post" action="/predict">
+            <label>Age:</label><input type="number" name="age" required><br>
+            <label>Income:</label><input type="number" name="income" required><br>
+            <label>Loan Amount:</label><input type="number" name="loan_amount" required><br>
+            <label>Loan Term (months):</label><input type="number" name="loan_term" required><br>
+            <label>Credit Score:</label><input type="number" name="credit_score" required><br>
+            
+            <label>Employment:</label>
+            <select name="employment">
+                <option>Salaried</option>
+                <option>Self-employed</option>
+                <option>Unemployed</option>
+            </select><br>
+
+            <label>Marital Status:</label>
+            <select name="marital_status">
+                <option>Single</option>
+                <option>Married</option>
+                <option>Divorced</option>
+            </select><br>
+
+            <label>Education:</label>
+            <select name="education">
+                <option>Undergrade</option>
+                <option>Graduate</option>
+                <option>Postgraduate</option>
+            </select><br>
+
+            <label>Property Area:</label>
+            <select name="property_area">
+                <option>Urban</option>
+                <option>Semiurban</option>
+                <option>Rural</option>
+            </select><br>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

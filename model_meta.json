@@ -1,0 +1,4 @@
+{
+    "accuracy": 1.0,
+    "tree_text": "|--- num__credit_score <= 600.50\n|   |--- class: 0\n|--- num__credit_score >  600.50\n|   |--- num__income <= 4036.00\n|   |   |--- class: 0\n|   |--- num__income >  4036.00\n|   |   |--- class: 1\n"
+}
